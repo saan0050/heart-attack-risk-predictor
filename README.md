@@ -2,7 +2,7 @@
 
 A clean, dark-themed web app that analyses six key cardiovascular risk factors and gives an instant, colour-coded risk assessment — no server required.
 
-![Preview](https://img.shields.io/badge/status-live-brightgreen) ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
 
 ---
 
@@ -28,26 +28,7 @@ heart-attack-risk-predictor/
 
 ---
 
-##  How to Run Locally
 
-1. **Download or clone** this repository
-2. Open `index.html` in any modern browser — that's it!
-
-No build tools, no npm install, no server needed.
-
----
-
-##  Live Demo (GitHub Pages)
-
-After uploading to GitHub you can publish a free live link:
-
-1. Go to your repository → **Settings** → **Pages**
-2. Under *Source*, select **Deploy from a branch**
-3. Choose **main** branch → **/ (root)** → click **Save**
-4. Your live URL will appear at the top of the Pages section, e.g.:  
-   `https://your-username.github.io/heart-attack-risk-predictor/`
-
----
 
 ##  Disclaimer
 
