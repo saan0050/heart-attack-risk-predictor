@@ -6,7 +6,7 @@ A clean, dark-themed web app that analyses six key cardiovascular risk factors a
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Six risk factors analysed** — Age, Heart Rate, Blood Pressure (systolic/diastolic), Cholesterol, Diabetes, Obesity
 - **Privacy-first inputs** — all numeric fields are masked (shown as dots) so your data stays off-screen
