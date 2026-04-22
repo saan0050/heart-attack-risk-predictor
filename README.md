@@ -1,4 +1,4 @@
-# 💓 Heart Attack Risk Predictor
+# Heart Attack Risk Predictor
 
 A clean, dark-themed web app that analyses six key cardiovascular risk factors and gives an instant, colour-coded risk assessment — no server required.
 
@@ -16,7 +16,7 @@ A clean, dark-themed web app that analyses six key cardiovascular risk factors a
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 heart-attack-risk-predictor/
@@ -28,7 +28,7 @@ heart-attack-risk-predictor/
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 1. **Download or clone** this repository
 2. Open `index.html` in any modern browser — that's it!
@@ -37,7 +37,7 @@ No build tools, no npm install, no server needed.
 
 ---
 
-## 🌐 Live Demo (GitHub Pages)
+##  Live Demo (GitHub Pages)
 
 After uploading to GitHub you can publish a free live link:
 
@@ -49,7 +49,7 @@ After uploading to GitHub you can publish a free live link:
 
 ---
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This tool is for **educational and informational purposes only**.  
 It does **not** constitute medical advice, diagnosis, or treatment.  
