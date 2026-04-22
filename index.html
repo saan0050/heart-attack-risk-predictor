@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heart Attack Risk Predictor</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background decorations -->
+  <div class="noise"></div>
+  <div class="glow-orb orb1"></div>
+  <div class="glow-orb orb2"></div>
+
+  <div class="container">
+
+    <!-- ── Header ── -->
+    <header>
+      <div class="heartbeat-icon">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M4 20 L10 20 L13 12 L17 28 L21 16 L24 22 L28 20 L36 20"
+            stroke="#e8624a" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" fill="none"
+          />
+          <path
+            d="M20 6 C20 6 10 8 10 16 C10 22 20 30 20 30 C20 30 30 22 30 16 C30 8 20 6 20 6Z"
+            fill="rgba(232,98,74,0.12)" stroke="#e8624a" stroke-width="0.5"
+          />
+        </svg>
+      </div>
+      <h1>Heart attack<br /><em>risk predictor</em></h1>
+      <p class="subtitle">
+        Enter your health details below. We'll analyse six key cardiovascular
+        risk factors and give you an instant, personalised assessment.
+      </p>
+    </header>
+
+    <!-- ── Card 1 · Personal & Vitals ── -->
+    <div class="form-card">
+      <p class="card-label">Personal &amp; vitals</p>
+
+      <div class="field">
+        <div class="field-label">Age <span class="field-unit">years</span></div>
+        <input
+          type="password" id="age"
+          placeholder="e.g. 45"
+          inputmode="numeric" pattern="[0-9]*"
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="field">
+        <div class="field-label">Heart rate <span class="field-unit">bpm</span></div>
+        <input
+          type="password" id="heartrate"
+          placeholder="e.g. 75"
+          inputmode="numeric" pattern="[0-9]*"
+          autocomplete="off"
+        />
+      </div>
+    </div>
+
+    <!-- ── Card 2 · Blood Pressure ── -->
+    <div class="form-card">
+      <p class="card-label">Blood pressure</p>
+
+      <div class="field">
+        <div class="field-label">
+          Systolic / Diastolic <span class="field-unit">mmHg</span>
+        </div>
+        <div class="bp-row">
+          <input
+            type="password" id="bp-sys"
+            placeholder="Systolic"
+            inputmode="numeric" pattern="[0-9]*"
+            autocomplete="off"
+          />
+          <span class="bp-sep">/</span>
+          <input
+            type="password" id="bp-dia"
+            placeholder="Diastolic"
+            inputmode="numeric" pattern="[0-9]*"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Card 3 · Lab Values ── -->
+    <div class="form-card">
+      <p class="card-label">Lab values</p>
+
+      <div class="field">
+        <div class="field-label">Cholesterol <span class="field-unit">mg/dL</span></div>
+        <input
+          type="password" id="cholesterol"
+          placeholder="e.g. 130"
+          inputmode="numeric" pattern="[0-9]*"
+          autocomplete="off"
+        />
+      </div>
+    </div>
+
+    <!-- ── Card 4 · Medical History ── -->
+    <div class="form-card">
+      <p class="card-label">Medical history</p>
+
+      <div class="field">
+        <div class="field-label">Diabetes?</div>
+        <div class="toggle-row">
+          <button class="toggle-btn" id="diab-yes" onclick="toggleSelect('diab','yes')">Yes</button>
+          <button class="toggle-btn" id="diab-no"  onclick="toggleSelect('diab','no')">No</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field-label">Obesity?</div>
+        <div class="toggle-row">
+          <button class="toggle-btn" id="obes-yes" onclick="toggleSelect('obes','yes')">Yes</button>
+          <button class="toggle-btn" id="obes-no"  onclick="toggleSelect('obes','no')">No</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Predict button ── -->
+    <button class="predict-btn" onclick="predict()">Predict my risk</button>
+    <div class="error-msg" id="error"></div>
+
+    <!-- ── Result section ── -->
+    <div class="result-wrap" id="result-wrap">
+      <div class="result-card" id="result-card">
+
+        <div class="result-header">
+          <div class="risk-badge" id="result-badge">
+            <span id="result-icon"></span>
+          </div>
+          <div>
+            <div class="result-title" id="result-title"></div>
+            <div class="result-desc"  id="result-desc"></div>
+          </div>
+        </div>
+
+        <div class="factors-title">Risk factor breakdown</div>
+        <ul class="factor-list" id="factor-list"></ul>
+
+        <div class="disclaimer" id="disclaimer" style="display:none;">
+          This tool is for informational purposes only and does not constitute
+          medical advice. Please consult a qualified healthcare professional for
+          proper diagnosis and treatment.
+        </div>
+
+      </div>
+      <button class="reset-btn" onclick="resetForm()">Start over</button>
+    </div>
+
+    <!-- ── Footer ── -->
+    <footer>
+      Heart Attack Risk Predictor &nbsp;·&nbsp; For educational use only<br />
+      Always consult a qualified medical professional for health decisions.
+    </footer>
+
+  </div><!-- /.container -->
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
