@@ -1,8 +1,8 @@
-# Heart Attack Risk Predictor
+# Heart Attack Risk Prediction Calculator
 
 A clean, dark-themed web app that analyses six key cardiovascular risk factors and gives an instant, colour-coded risk assessment — no server required.
 
-
+Click the link to access the heart attack risk predictor : https://saan0050.github.io/heart-attack-risk-predictor/
 
 ---
 
