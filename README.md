@@ -1,22 +1,22 @@
 # Heart Attack Risk Prediction Calculator
 
-A clean, dark-themed web app that analyses six key cardiovascular risk factors and gives an instant, colour-coded risk assessment — no server required.
+A web app that analyses six key cardiovascular risk factors and gives an instant, colour-coded risk assessment — no server required.
 
 Click the link to access the heart attack risk predictor : https://saan0050.github.io/heart-attack-risk-predictor/
 
 ---
 
-##  Features
+#  Features
 
-- **Six risk factors analysed** — Age, Heart Rate, Blood Pressure (systolic/diastolic), Cholesterol, Diabetes, Obesity
-- **Privacy-first inputs** — all numeric fields are masked (shown as dots) so your data stays off-screen
-- **Instant colour-coded result** — Low 🟢 / Moderate 🟡 / High 🔴 with a detailed breakdown
-- **Fully offline** — pure HTML + CSS + JavaScript, zero dependencies, zero backend
-- **Responsive** — works on desktop, tablet and mobile
+- Six risk factors analysed — Age, Heart Rate, Blood Pressure (systolic/diastolic), Cholesterol, Diabetes, Obesity
+- Privacy-first inputs — all numeric fields are masked (shown as dots) so your data stays off-screen
+- Instant colour-coded result** — Low 🟢 / Moderate 🟡 / High 🔴 with a detailed breakdown
+- Fully offline — pure HTML + CSS + JavaScript, zero dependencies, zero backend
+- Responsive — works on desktop, tablet and mobile
 
 ---
 
-##  Project Structure
+#  Project Structure
 
 ```
 heart-attack-risk-predictor/
